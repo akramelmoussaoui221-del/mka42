@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MKA42 - Tienda Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e6f2ff;
+      color: #0f172a;
+    }
+
+    header {
+      background: #60a5fa;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      background: #dbeafe;
+    }
+
+    .precio-antiguo {
+      text-decoration: line-through;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .precio-nuevo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #2563eb;
+      margin: 8px 0;
+    }
+
+    .regalo {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .cuotas {
+      font-size: 13px;
+      color: #0f172a;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: block;
+      margin: 6px 0;
+      padding: 12px;
+      background: #3b82f6;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #bfdbfe;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .contacto {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MKA42</h1>
+    <p>Tienda online oficial · Ofertas limitadas</p>
+  </header>
+
+  <section class="productos">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Hydrive">
+      <h2>Hydrive</h2>
+      <p class="precio-antiguo">Antes 2500€</p>
+      <p class="precio-nuevo">799€</p>
+      <p class="regalo">🎁 AirPods Pro gratis</p>
+      <a class="btn" href="https://wa.me/34613264474" target="_blank">Comprar por WhatsApp</a>
+      <a class="btn" href="#">Pagar con tarjeta / PayPal</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Smarto">
+      <h2>Smarto</h2>
+      <p class="precio-antiguo">Antes 2500€</p>
+      <p class="precio-nuevo">799€</p>
+      <p class="regalo">🎁 AirPods Pro gratis</p>
+      <a class="btn" href="https://wa.me/34613264474" target="_blank">Comprar por WhatsApp</a>
+      <a class="btn" href="#">Pagar con tarjeta / PayPal</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Hydrive Pro">
+      <h2>Hydrive Pro</h2>
+      <p class="precio-antiguo">Antes 2995€</p>
+      <p class="precio-nuevo">999€</p>
+      <p class="regalo">🎁 AirPods Max gratis</p>
+      <p class="cuotas">💳 Pago a plazos sin intereses disponible</p>
+      <a class="btn" href="https://wa.me/34613264474" target="_blank">Comprar por WhatsApp</a>
+      <a class="btn" href="#">Pagar con tarjeta / PayPal</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Hydrition">
+      <h2>Hydrition</h2>
+      <p class="precio-antiguo">Antes 2995€</p>
+      <p class="precio-nuevo">999€</p>
+      <p class="regalo">🎁 AirPods Max gratis</p>
+      <a class="btn" href="https://wa.me/34613264474" target="_blank">Comprar por WhatsApp</a>
+      <a class="btn" href="#">Pagar con tarjeta / PayPal</a>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 MKA42 · Todos los derechos reservados
+    <div class="contacto">WhatsApp: 613 26 44 74 · España</div>
+  </footer>
+
+</body>
+</html>
